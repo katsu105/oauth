@@ -1,0 +1,6 @@
+= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: 'navbar-link btn btn-primary'
+
+- if user_signed_in?
+  現在、ユーザー#{current_user.id}でログイン中です
+- else
+  未ログインです
